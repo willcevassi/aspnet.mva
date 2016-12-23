@@ -102,7 +102,14 @@ namespace asp.mvc5.basico.web.Controllers
             return View(categoria);
         }
 
-
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing)
+            {
+                db.Dispose();
+            }
+            base.Dispose(disposing);
+        }
 
     }
 }
