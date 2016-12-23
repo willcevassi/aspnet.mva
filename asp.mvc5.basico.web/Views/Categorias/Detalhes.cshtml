@@ -1,0 +1,33 @@
+﻿@model asp.mvc5.basico.web.Models.Categoria
+
+@{
+    ViewBag.Title = "Detalhes da Categoria";
+}
+
+<h2>Detalhes da Categoria</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.IdCategoria)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdCategoria)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Descricao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Descricao)
+        </dd>
+
+        <dt>
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Alterar", "Alterar", new { id = Model.IdCategoria }) | @Html.ActionLink("Voltar", "Index")
+</p>

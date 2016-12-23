@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-
-namespace asp.mvc5.basico.web.Models
+﻿namespace asp.mvc5.basico.web.Models
 {
     public class Livro
     {
