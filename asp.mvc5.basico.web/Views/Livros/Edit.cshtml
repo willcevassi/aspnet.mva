@@ -1,17 +1,16 @@
 ﻿@model asp.mvc5.basico.web.Models.Livro
 
 @{
-    ViewBag.Title = "Alterar";
+    ViewBag.Title = "Edit";
 }
 
-<h2>Edit</h2>
+<h2>Alteração do Livro</h2>
 
 @using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
     
     <div class="form-horizontal">
-        <h4>Livro</h4>
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         @Html.HiddenFor(model => model.ID)
